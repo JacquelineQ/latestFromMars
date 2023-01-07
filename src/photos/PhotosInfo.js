@@ -13,6 +13,8 @@ function PhotosInfo() {
                 You can also search through photos from any rover by Earth Date or Martian Sol, and further filter 
                 by camera.
             </p>
+            <br/>
+            <p>ATTENTION SAFARI MOBILE USERS: The Safari Mobile Browser does not support minimum and max date inputs, be sure to check the dates that photos are available for the rover you are searching</p>
             </div>
     )
 }

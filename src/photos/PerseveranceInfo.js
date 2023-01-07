@@ -11,6 +11,9 @@ function PerseveranceInfo(){
             <br/>
             <br/>
             Landing Date: 2021-02-18
+            <br />
+            <br />
+            1/7/22: Be advised that Perseverance Latest photos are not properly loading from the NASA API, you can still search for older photos and hopefully this will be resolved soon  
             </p>
 
             <table>

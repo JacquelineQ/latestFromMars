@@ -20,7 +20,7 @@ function PerseveranceLatest() {
         {
           name: "Camera",
           selector: (row) => row.camera.name,
-          sortable: true
+          sortable: true,
         },
         {
           name: "Image",
