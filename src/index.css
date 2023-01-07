@@ -43,58 +43,170 @@
  /* Nav Bar  */
  
  .mainNav {
-   box-sizing: border-box;
-   display: flex;
-   justify-content: space-between;
-   /* set padding to % for now, may change  */
-   padding: 2%;
-   border: solid white;
-   font-size: large;
- 
- }
- 
- .photosNav {
-   display: flex;
-   justify-content: space-around;
-   padding: 1%;
-   border: solid white;
- }
- 
- .roverNav {
-   display: flex;
-   justify-content: space-around;
-   padding: 1%;
-   border: solid white;
- }
- 
- /* Earth date search forms  */
- form {
-   display: flex;
-   flex-direction: row;
-   justify-content: center;
-   padding: 1%;
-   align-items: center;
- 
- }
- 
- input {
-   height: 2em;
-   margin: 1%;
- }
- 
- .dataTable {
-   font-size: 20px;
- }
- 
- /* Main pages  */
- 
- .mainContainer {
-   display: flex;
-   flex-direction: column;
- }
- 
- .mainP {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  /* set padding to % for now, may change  */
+  padding: 2%;
+  border: solid white;
+  font-size: large;
+  margin: 0;
+
+}
+
+/* Links in mainNav  */
+
+.mainLink {
+ padding: 0;
+ margin: 0;
+}
+
+
+.navBar {
+ display: flex;
+ justify-content: space-around;
+ /* padding: 1%; */
+ list-style-type: none;
+ /* margin: 0; */
+ box-sizing: border-box;
+ margin-bottom: 0;
+}
+/*  
+.roverNav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  list-style-type: none;
+  /* border: solid white; */
+
+
+/* .perseveranceNavBar {
+ display: flex;
+ justify-content: space-around;
+ list-style-type: none;
+ padding: 1%;
+} */
+
+/* Earth date search forms  */
+form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%;
+  align-items: center;
+
+}
+
+input {
+  height: 2em;
+  margin: 1%;
+}
+
+.dataTable {
   font-size: 20px;
-  padding: 5%;
-  line-height: 150%;
- }
+}
+
+/* Main pages  */
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainP {
+ font-size: 20px;
+ padding: 5%;
+ line-height: 150%;
+}
+
+/* Photo Pages  */
+
+
+div.info-text-container {
+ display: flex;
+ flex-direction: column;
+ /* justify-content: center; */
+ font-size: 20px;
+ padding: 5%;
+ line-height: 150%;
+}
+
+table, th, td {
+ border: 1px solid white;
+ border-collapse: collapse;
+}
+
+/* Tab Styling  */
+
+.tab {
+  cursor: pointer;
+}
+
+/* 
+.tab:focus {
+ border-top: 1px solid white;
+ border-right: 1px solid white;
+ border-left: 1px solid white;
+} */
+
+/* .tab:focus-within {
+ text-decoration: underline;
+} */
+
+.react-tabs {
+ -webkit-tap-highlight-color: transparent;
+}
+
+.react-tabs__tab-list {
+ border-bottom: 1px solid #aaa;
+ margin: 0 0 10px;
+ padding: 0;
+}
+
+.react-tabs__tab {
+ display: inline-block;
+ border: 1px solid white;
+ border-bottom: none;
+ bottom: -1px;
+ position: relative;
+ list-style: none;
+ /* padding: 6px 12px; */
+}
+
+.react-tabs__tab--selected {
+ /* background: black; */
+ border: solid white;
+ border-bottom: none;
+ /* bottom: -10px; */
+ /* color: red; */
+ border-radius: 5px 5px 0 0;
+ padding-top: 1%;
+ padding-left: 2%;
+ padding-right: 2%;
+ margin-top: 0;
+ /* text-decoration: dotted greenyellow; */
+ /* text-decoration: unset; */
+}
+
+
+.react-tabs__tab:focus {
+ outline: none;
+}
+
+.react-tabs__tab:focus:after {
+ content: '';
+ position: absolute;
+ height: 5px;
+ left: -4px;
+ right: -4px;
+ bottom: -5px;
+ background: #fff;
+}
+
+.react-tabs__tab-panel {
+ display: none;
+}
+
+.react-tabs__tab-panel--selected {
+ display: block;
+}
