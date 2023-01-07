@@ -139,7 +139,13 @@ table, th, td {
 /* Tab Styling  */
 
 .tab {
+  /* fixes pointer issue  */
   cursor: pointer;
+}
+
+.tab:focus {
+  /* fixes blue outline highlight after click  */
+  outline: none;
 }
 
 /* 
@@ -189,9 +195,9 @@ table, th, td {
 }
 
 
-.react-tabs__tab:focus {
+/* .react-tabs__tab:focus {
  outline: none;
-}
+} */
 
 .react-tabs__tab:focus:after {
  content: '';
@@ -201,11 +207,13 @@ table, th, td {
  right: -4px;
  bottom: -5px;
  background: #fff;
+ outline: none;
+ /* remove blue highlight on outline  */
 }
 
-.react-tabs__tab-panel {
+/* .react-tabs__tab-panel {
  display: none;
-}
+} */
 
 .react-tabs__tab-panel--selected {
  display: block;
