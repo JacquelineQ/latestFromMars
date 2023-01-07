@@ -25,7 +25,7 @@ function NavBar() {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
-                <Route path="/blog/blog" element={<Blog />} />
+                <Route path="/blog" element={<Blog />} />
                 <Route path="/photos/photos" element={<Photos />} />  
             </Routes>
         </>
