@@ -6,7 +6,7 @@ import {
   } from "react-router-dom";
 import Home from "./Home.js";
 import About from "./About.js";
-import Blog from "./Blog.js";
+import Blog from "./blog/Blog.js";
 import Photos from "./photos/Photos.js";
 
 
@@ -16,7 +16,7 @@ function NavBar() {
         <nav class="mainNav">
             <NavLink className="mainLink" to="/">Home</NavLink>
             <NavLink className="mainLink" to="/about">About</NavLink>
-            <NavLink className="mainLink" to="/blog">Blog</NavLink>
+            <NavLink className="mainLink" to="/blog/blog">Blog</NavLink>
             <NavLink className="mainLink" to="/photos/photos">Photos</NavLink>
         </nav>
   
