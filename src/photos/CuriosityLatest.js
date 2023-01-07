@@ -5,11 +5,7 @@ import DataTable from "react-data-table-component";
 
 function CuriosityLatest() {
     const [photos, setPhotos] = useState([]);
-    // const setPending = React.useState(true);
-    // const setRows = React.useState([]);
 	
-    
-
     const columns = [
         {
           name: "Matian Sol",
@@ -38,10 +34,6 @@ function CuriosityLatest() {
         .then((response) => {
             const photos = response.data.latest_photos;
             setPhotos(photos);
-        
-              // setRows(response)
-              // setPending(false);
-          
         });
 
        
